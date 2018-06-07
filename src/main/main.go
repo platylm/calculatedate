@@ -1,11 +1,12 @@
 package main
 
 import (
-	"calculationdate"
-	"fmt"
+	"apicalculatedate"
+	"net/http"
 )
 
 func main() {
+	http.HandleFunc("/apicalculatedurationdate", apicalculatedate.ApiGetStartAndEndDate)
+	http.ListenAndServe(":9002", nil)
 
-	fmt.Println(calculationdate.Cal())
 }
