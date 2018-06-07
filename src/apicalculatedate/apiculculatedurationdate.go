@@ -1,6 +1,7 @@
 package apicalculatedate
 
 import (
+	"calculationdate"
 	"encoding/json"
 	"net/http"
 	"strconv"
@@ -40,7 +41,7 @@ func ApiGetStartAndEndDate(w http.ResponseWriter, r *http.Request) {
 		Endyear:    converseStringToInt(spitEndDate[2]),
 	}
 
-	result, _ := json.Marshal(startEndDate)
+	result, _ := json.Marshal(calculationdate.MakeJSON(4, 1, 2018, 4, 6, 2018))
 	w.Write(result)
 
 }
