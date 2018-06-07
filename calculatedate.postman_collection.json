@@ -109,18 +109,40 @@
 			],
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "day",
+						"value": "10"
+					},
+					{
+						"key": "month",
+						"value": "11"
+					},
+					{
+						"key": "year",
+						"value": "1983"
+					}
+				],
 				"body": {},
 				"url": {
-					"raw": "localhost:9000/getDayResult/date/calculatedate",
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9000",
+					"port": "9002",
 					"path": [
-						"getDayResult",
-						"date",
-						"calculatedate"
+						"apicalculatedurationdate"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": "4/1/2018"
+						},
+						{
+							"key": "enddate",
+							"value": "4/6/2018"
+						}
 					]
 				}
 			},
@@ -230,10 +252,41 @@
 			],
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "day",
+						"value": "27"
+					},
+					{
+						"key": "month",
+						"value": "7"
+					},
+					{
+						"key": "year",
+						"value": "1993"
+					}
+				],
 				"body": {},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"apicalculatedurationdate"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": "4/1/2018"
+						},
+						{
+							"key": "enddate",
+							"value": "4/6/2018"
+						}
+					]
 				}
 			},
 			"response": []
@@ -342,17 +395,40 @@
 			],
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "day",
+						"value": "4"
+					},
+					{
+						"key": "month",
+						"value": "1"
+					},
+					{
+						"key": "year",
+						"value": "2018"
+					}
+				],
 				"body": {},
 				"url": {
-					"raw": "localhost:9002/calculatedurationdate/",
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9002",
 					"path": [
-						"calculatedurationdate",
-						""
+						"apicalculatedurationdate"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": "4/1/2018"
+						},
+						{
+							"key": "enddate",
+							"value": "4/6/2018"
+						}
 					]
 				}
 			},
@@ -462,10 +538,41 @@
 			],
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "day",
+						"value": "19"
+					},
+					{
+						"key": "month",
+						"value": "9"
+					},
+					{
+						"key": "year",
+						"value": "1987"
+					}
+				],
 				"body": {},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"apicalculatedurationdate"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": "4/1/2018"
+						},
+						{
+							"key": "enddate",
+							"value": "4/6/2018"
+						}
+					]
 				}
 			},
 			"response": []
@@ -574,10 +681,41 @@
 			],
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "day",
+						"value": "29"
+					},
+					{
+						"key": "month",
+						"value": "8"
+					},
+					{
+						"key": "year",
+						"value": "1990"
+					}
+				],
 				"body": {},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"apicalculatedurationdate"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": "4/1/2018"
+						},
+						{
+							"key": "enddate",
+							"value": "4/6/2018"
+						}
+					]
 				}
 			},
 			"response": []
