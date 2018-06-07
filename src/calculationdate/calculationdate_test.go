@@ -137,3 +137,29 @@ func Test_Tranfer_Day_To_Hours_Input_9079_Should_Be_217896(t *testing.T) {
 	}
 
 }
+
+func Test_Set_Full_Name_Date_From_Input_412018_Should_Be_Thursday_4_January_2018(t *testing.T) {
+	days := 4
+	months := 1
+	years := 2018
+	resultFullname := SetFullNameDate(years, months, days)
+	expectedFullname := "Thursday 4 January 2018"
+
+	if resultFullname != expectedFullname {
+		t.Errorf("expectedFullname %s but %s ", expectedFullname, resultFullname)
+
+	}
+}
+
+func Test_Set_Full_Name_Date_To_Input_462018_Should_Be_Monday_4_June_2018(t *testing.T) {
+	days := 4
+	months := 6
+	years := 2018
+	resultFullname := SetFullNameDate(years, months, days)
+	expectedFullname := "Monday 4 June 2018"
+
+	if resultFullname != expectedFullname {
+		t.Errorf("expectedFullname %s but %s ", expectedFullname, resultFullname)
+
+	}
+}
