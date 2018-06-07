@@ -8,6 +8,7 @@ import (
 )
 
 const hour = 24
+const minute = 60
 
 func CalBetweenDate(startday int, startmonth int, startyear int, endday int, endmonth int, endyear int) string {
 
@@ -20,4 +21,18 @@ func CalBetweenDate(startday int, startmonth int, startyear int, endday int, end
 	days := (hours / hour) + 1
 	return strconv.FormatFloat(days, 'f', 0, 64)
 
+}
+
+func TranferDayToMinute(days int) string {
+
+	minutes := days * hour * minute
+
+	return strconv.Itoa(minutes)
+
+}
+
+func TranferDayToSecond(days int) string {
+
+	seconds := days * 24 * 60 * 60
+	return strconv.Itoa(seconds)
 }
