@@ -9,6 +9,7 @@ import (
 
 const hour = 24
 const minute = 60
+const year = 365
 
 func CalBetweenDate(startday int, startmonth int, startyear int, endday int, endmonth int, endyear int) string {
 
@@ -41,4 +42,10 @@ func TransferDayToHours(days int) string {
 
 	hours := days * hour
 	return strconv.Itoa(hours)
+}
+
+func CalculatePercentOfYears(days int) string {
+
+	percentofyears := (float64(days) / year) * 100
+	return strconv.FormatFloat(percentofyears, 'f', 2, 64)
 }
