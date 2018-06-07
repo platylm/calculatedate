@@ -47,3 +47,8 @@ func TransferDayToWeek(days int) (string, string) {
 	return strconv.Itoa(weeks), strconv.Itoa(overdays)
 
 }
+func TransferDayToHours(days int) string {
+
+	hours := days * hour
+	return strconv.Itoa(hours)
+}
