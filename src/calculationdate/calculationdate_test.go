@@ -161,3 +161,20 @@ func Test_Calculate_Percent_Of_Years_Input_9079_Should_Be_2487_dot_40(t *testing
 	}
 
 }
+
+func Test_Check_Equal_Day_Input_4_4_2018_And_4_4_2018_Should_Be_1(t *testing.T) {
+	startday := 4
+	startmouth := 4
+	startyear := 2018
+	endday := 4
+	endmonth := 4
+	endyear := 2018
+	resultDurationDay := CheckEqualDay(startday, startmouth, startyear, endday, endmonth, endyear)
+	expectedDurationDay := "1"
+
+	if resultDurationDay != expectedDurationDay {
+		t.Errorf("expectedDurationDay %s but %s ", expectedDurationDay, resultDurationDay)
+
+	}
+
+}
