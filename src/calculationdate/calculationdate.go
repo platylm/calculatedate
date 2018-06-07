@@ -16,6 +16,9 @@ type durationDate struct {
 	DayNameFrom   string `json:"daynamefrom"`
 	DayNameTo     string `json:"daynameto"`
 	ResultDay     string `json:"resultday"`
+	ResultMonth   string `json:"resultmonth"`
+	ResultYear    string `json:"resultyear"`
+	ResultOverDay string `json:"resultoverday"`
 	Second        string `json:"second"`
 	Minute        string `json:"minute"`
 	Hours         string `json:"hours"`
@@ -33,8 +36,7 @@ func MakeJSON(startday int, startmonth int, startyear int, endday int, endmonth 
 		Second:      TransferDayToSecond(day),
 		Minute:      TransferDayToMinute(day),
 		Hours:       TransferDayToHours(day),
-		// Week:        TransferDayToWeek(day),
-		Percent: CalculatePercentOfYears(day),
+		Percent:     CalculatePercentOfYears(day),
 	}
 }
 

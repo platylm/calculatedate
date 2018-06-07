@@ -41,7 +41,7 @@ func ApiGetStartAndEndDate(w http.ResponseWriter, r *http.Request) {
 		Endyear:    converseStringToInt(spitEndDate[2]),
 	}
 
-	result, _ := json.Marshal(calculationdate.MakeJSON(4, 1, 2018, 4, 6, 2018))
+	result, _ := json.Marshal(calculationdate.MakeJSON(startEndDate.Startday, startEndDate.Startmonth, startEndDate.Startyear, startEndDate.Endday, startEndDate.Endmonth, startEndDate.Endyear))
 	w.Write(result)
 
 }
