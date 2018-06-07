@@ -26,7 +26,7 @@
 							"",
 							"pm.test(\"resultday should be display 12,626\", function () {",
 							"    var duration = pm.response.json();",
-							"    pm.expect(duration.resultday).to.eql(\"12,626\");",
+							"    pm.expect(duration.resultday).to.eql(\"12626\");",
 							"});",
 							"",
 							"pm.test(\"resultmonth should be display 6\", function () {",
@@ -44,24 +44,24 @@
 							"    pm.expect(duration.resultoverday).to.eql(\"26\");",
 							"});",
 							"",
-							"pm.test(\"second should be display 1,090,886,400\", function () {",
+							"pm.test(\"second should be display 1090886400\", function () {",
 							"    var duration = pm.response.json();",
-							"    pm.expect(duration.second).to.eql(\"1,090,886,400\");",
+							"    pm.expect(duration.second).to.eql(\"1090886400\");",
 							"});",
 							"",
-							"pm.test(\"minute should be display 18,181,440\", function () {",
+							"pm.test(\"minute should be display 18181440\", function () {",
 							"    var duration = pm.response.json();",
-							"    pm.expect(duration.minute).to.eql(\"18,181,440\");",
+							"    pm.expect(duration.minute).to.eql(\"18181440\");",
 							"});",
 							"",
-							"pm.test(\"hours should be display 303,024\", function () {",
+							"pm.test(\"hours should be display 303024\", function () {",
 							"    var duration = pm.response.json();",
-							"    pm.expect(duration.hours).to.eql(\"303,024\");",
+							"    pm.expect(duration.hours).to.eql(\"303024\");",
 							"});",
 							"",
-							"pm.test(\"week should be display 1,803\", function () {",
+							"pm.test(\"week should be display 1803\", function () {",
 							"    var duration = pm.response.json();",
-							"    pm.expect(duration.week).to.eql(\"1,803\");",
+							"    pm.expect(duration.week).to.eql(\"1803\");",
 							"});",
 							"",
 							"pm.test(\"dayoverofweek should be display 5\", function () {",
@@ -107,7 +107,7 @@
 					"query": [
 						{
 							"key": "startdate",
-							"value": "4/1/2018"
+							"value": "10/11/1983"
 						},
 						{
 							"key": "enddate",
@@ -220,7 +220,7 @@
 					"query": [
 						{
 							"key": "startdate",
-							"value": "4/1/2018"
+							"value": "27/7/1993"
 						},
 						{
 							"key": "enddate",
@@ -237,15 +237,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "31a96a96-9e44-4844-91be-368711b4ca5f",
+						"id": "26bafa32-a751-41fc-a059-67a654784e7a",
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"daynamefrom should be display Thursday\", function () {",
 							"    var duration = pm.response.json();",
 							"    pm.expect(duration.daynamefrom).to.eql(\"Thursday 4 January 2018\");",
 							"});",
-							"",
-							"",
 							"",
 							"pm.test(\"daynameto should be display Monday\", function () {",
 							"    var duration = pm.response.json();",
@@ -448,7 +446,7 @@
 					"query": [
 						{
 							"key": "startdate",
-							"value": "4/1/2018"
+							"value": "19/9/1987"
 						},
 						{
 							"key": "enddate",
@@ -561,7 +559,7 @@
 					"query": [
 						{
 							"key": "startdate",
-							"value": "4/1/2018"
+							"value": "29/8/1990"
 						},
 						{
 							"key": "enddate",
