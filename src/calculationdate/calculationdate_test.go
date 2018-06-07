@@ -44,10 +44,10 @@ func Test_Cal_Between_Date_Input_Startday_Endday_Should_Be_9079(t *testing.T) {
 
 }
 
-func Test_Tranfer_Day_To_Minute_Input_152_Should_Be_218880(t *testing.T) {
+func Test_Transfer_Day_To_Minute_Input_152_Should_Be_218880(t *testing.T) {
 
 	day := 152
-	resultMinute := TranferDayToMinute(day)
+	resultMinute := TransferDayToMinute(day)
 	expectedMinute := "218880"
 
 	if resultMinute != expectedMinute {
@@ -57,10 +57,10 @@ func Test_Tranfer_Day_To_Minute_Input_152_Should_Be_218880(t *testing.T) {
 
 }
 
-func Test_Tranfer_Day_To_Minute_Input_152_Should_Be_13073760(t *testing.T) {
+func Test_Transfer_Day_To_Minute_Input_152_Should_Be_13073760(t *testing.T) {
 
 	day := 9079
-	resultMinute := TranferDayToMinute(day)
+	resultMinute := TransferDayToMinute(day)
 	expectedMinute := "13073760"
 
 	if resultMinute != expectedMinute {
@@ -70,14 +70,46 @@ func Test_Tranfer_Day_To_Minute_Input_152_Should_Be_13073760(t *testing.T) {
 
 }
 
-func Test_Tranfer_Day_To_Second_Input_152_Should_Be_13132800(t *testing.T) {
+func Test_Transfer_Day_To_Second_Input_152_Should_Be_13132800(t *testing.T) {
 	day := 152
-	resultHour := TranferDayToSecond(day)
-	expectedHour := "13132800"
+	resultSecond := TransferDayToSecond(day)
+	expectedSecond := "13132800"
 
-	if resultHour != expectedHour {
-		t.Errorf("expectedSecond %s but %s ", expectedHour, resultHour)
+	if resultSecond != expectedSecond {
+		t.Errorf("expectedSecond %s but %s ", expectedSecond, resultSecond)
 
 	}
 
+}
+
+func Test_Transfer_Day_To_Week_Input_152_Should_Be_21_Week_5_Day(t *testing.T) {
+	day := 152
+	resultWeek, resultDay := TransferDayToWeek(day)
+	expectedWeek := "21"
+	expectedDay := "5"
+
+	if resultWeek != expectedWeek {
+		t.Errorf("expectedWeek %s but %s ", expectedWeek, resultWeek)
+
+	}
+	if resultDay != expectedDay {
+		t.Errorf("expectedDay %s but %s ", expectedDay, resultDay)
+
+	}
+}
+
+func Test_Transfer_Day_To_Week_Input_9079_Should_Be_1297_Week_0_Day(t *testing.T) {
+	day := 9079
+	resultWeek, resultDay := TransferDayToWeek(day)
+	expectedWeek := "1297"
+	expectedDay := "0"
+
+	if resultWeek != expectedWeek {
+		t.Errorf("expectedWeek %s but %s ", expectedWeek, resultWeek)
+
+	}
+	if resultDay != expectedDay {
+		t.Errorf("expectedDay %s but %s ", expectedDay, resultDay)
+
+	}
 }
