@@ -120,7 +120,7 @@ func Test_Tranfer_Day_To_Hours_Input_152_Should_Be_3648(t *testing.T) {
 	expectedHour := "3648"
 
 	if resultHour != expectedHour {
-		t.Errorf("expectedSecond %s but %s ", expectedHour, resultHour)
+		t.Errorf("expectedHour %s but %s ", expectedHour, resultHour)
 
 	}
 
@@ -162,4 +162,44 @@ func Test_Set_Full_Name_Date_To_Input_462018_Should_Be_Monday_4_June_2018(t *tes
 		t.Errorf("expectedFullname %s but %s ", expectedFullname, resultFullname)
 
 	}
+}
+func Test_Calculate_Percent_Of_Years_Input_152_Should_Be_41_dot_64(t *testing.T) {
+	day := 152
+	resultPercentOfYears := CalculatePercentOfYears(day)
+	expectedPercentOfYears := "41.64"
+
+	if resultPercentOfYears != expectedPercentOfYears {
+		t.Errorf("expectedPercentOfYears %s but %s ", expectedPercentOfYears, resultPercentOfYears)
+
+	}
+
+}
+
+func Test_Calculate_Percent_Of_Years_Input_9079_Should_Be_2487_dot_40(t *testing.T) {
+	day := 9079
+	resultPercentOfYears := CalculatePercentOfYears(day)
+	expectedPercentOfYears := "2487.40"
+
+	if resultPercentOfYears != expectedPercentOfYears {
+		t.Errorf("expectedPercentOfYears %s but %s ", expectedPercentOfYears, resultPercentOfYears)
+
+	}
+
+}
+
+func Test_Check_Equal_Day_Input_4_4_2018_And_4_4_2018_Should_Be_1(t *testing.T) {
+	startday := 4
+	startmouth := 4
+	startyear := 2018
+	endday := 4
+	endmonth := 4
+	endyear := 2018
+	resultDurationDay := CheckEqualDay(startday, startmouth, startyear, endday, endmonth, endyear)
+	expectedDurationDay := "1"
+
+	if resultDurationDay != expectedDurationDay {
+		t.Errorf("expectedDurationDay %s but %s ", expectedDurationDay, resultDurationDay)
+
+	}
+
 }

@@ -8,6 +8,7 @@ import (
 
 const hour = 24
 const minute = 60
+const year = 365
 const second = 60
 const week = 7
 
@@ -62,4 +63,17 @@ func SetFullNameDate(year int, month int, day int) string {
 	years := fullnamedate.Year()
 
 	return fmt.Sprintf("%s %s %s %s", weekdays.String(), strconv.Itoa(days), months.String(), strconv.Itoa(years))
+}
+func CalculatePercentOfYears(days int) string {
+
+	percentofyears := (float64(days) / year) * 100
+	return strconv.FormatFloat(percentofyears, 'f', 2, 64)
+}
+
+func CheckEqualDay(startday, startmouth, startyear, endday, endmonth, endyear int) string {
+	if startday == endday && startmouth == endmonth && startyear == endyear {
+		return "1"
+	}
+
+	return "not equal"
 }
