@@ -59,3 +59,11 @@ func CalculatePercentOfYears(days int) string {
 	percentofyears := (float64(days) / year) * 100
 	return strconv.FormatFloat(percentofyears, 'f', 2, 64)
 }
+
+func CheckEqualDay(startday, startmouth, startyear, endday, endmonth, endyear int) string {
+	if startday == endday && startmouth == endmonth && startyear == endyear {
+		return "1"
+	}
+
+	return "not equal"
+}
