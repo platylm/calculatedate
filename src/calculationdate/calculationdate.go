@@ -1,9 +1,8 @@
 package calculationdate
 
 import (
+	"fmt"
 	"strconv"
-	//"calculationdate"
-
 	"time"
 )
 
@@ -51,4 +50,16 @@ func TransferDayToHours(days int) string {
 
 	hours := days * hour
 	return strconv.Itoa(hours)
+}
+
+func SetFullNameDate(year int, month int, day int) string {
+
+	fullnamedate := time.Date(year, time.Month(month), day, 0, 0, 0, 0, time.UTC)
+
+	weekdays := fullnamedate.Weekday()
+	days := fullnamedate.Day()
+	months := fullnamedate.Month()
+	years := fullnamedate.Year()
+
+	return fmt.Sprintf("%s %s %s %s", weekdays.String(), strconv.Itoa(days), months.String(), strconv.Itoa(years))
 }
