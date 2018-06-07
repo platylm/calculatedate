@@ -1,11 +1,8 @@
 package main
 
-import (
-	"calculationdate"
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
-	fmt.Println(calculationdate.Cal())
+	fmt.Println("sfsad")
 }
