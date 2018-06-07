@@ -120,7 +120,7 @@ func Test_Tranfer_Day_To_Hours_Input_152_Should_Be_3648(t *testing.T) {
 	expectedHour := "3648"
 
 	if resultHour != expectedHour {
-		t.Errorf("expectedSecond %s but %s ", expectedHour, resultHour)
+		t.Errorf("expectedHour %s but %s ", expectedHour, resultHour)
 
 	}
 
@@ -144,7 +144,7 @@ func Test_Calculate_Percent_Of_Years_Input_152_Should_Be_41_dot_64(t *testing.T)
 	expectedPercentOfYears := "41.64"
 
 	if resultPercentOfYears != expectedPercentOfYears {
-		t.Errorf("expectedSecond %s but %s ", expectedPercentOfYears, resultPercentOfYears)
+		t.Errorf("expectedPercentOfYears %s but %s ", expectedPercentOfYears, resultPercentOfYears)
 
 	}
 
@@ -156,7 +156,7 @@ func Test_Calculate_Percent_Of_Years_Input_9079_Should_Be_2487_dot_40(t *testing
 	expectedPercentOfYears := "2487.40"
 
 	if resultPercentOfYears != expectedPercentOfYears {
-		t.Errorf("expectedSecond %s but %s ", expectedPercentOfYears, resultPercentOfYears)
+		t.Errorf("expectedPercentOfYears %s but %s ", expectedPercentOfYears, resultPercentOfYears)
 
 	}
 
