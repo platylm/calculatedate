@@ -9,6 +9,8 @@ import (
 
 const hour = 24
 const minute = 60
+const second = 60
+const week = 7
 
 func CalBetweenDate(startday int, startmonth int, startyear int, endday int, endmonth int, endyear int) string {
 
@@ -23,7 +25,7 @@ func CalBetweenDate(startday int, startmonth int, startyear int, endday int, end
 
 }
 
-func TranferDayToMinute(days int) string {
+func TransferDayToMinute(days int) string {
 
 	minutes := days * hour * minute
 
@@ -31,8 +33,17 @@ func TranferDayToMinute(days int) string {
 
 }
 
-func TranferDayToSecond(days int) string {
+func TransferDayToSecond(days int) string {
 
-	seconds := days * 24 * 60 * 60
+	seconds := days * hour * minute * second
 	return strconv.Itoa(seconds)
+}
+
+func TransferDayToWeek(days int) (string, string) {
+
+	weeks := days / week
+	overdays := days % week
+
+	return strconv.Itoa(weeks), strconv.Itoa(overdays)
+
 }
