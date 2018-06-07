@@ -36,3 +36,9 @@ func TranferDayToSecond(days int) string {
 	seconds := days * 24 * 60 * 60
 	return strconv.Itoa(seconds)
 }
+
+func TransferDayToHours(days int) string {
+
+	hours := days * hour
+	return strconv.Itoa(hours)
+}
