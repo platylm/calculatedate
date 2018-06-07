@@ -27,11 +27,11 @@ type durationDate struct {
 	Percent       string `json:"percent"`
 }
 
-func MakeJSON(startday int, startmonth int, startyear int, endday int, endmonth int, endyear int) durationDate {
+func MakeJSON(startday, startmonth, startyear, endday, endmonth, endyear int) durationDate {
 	day, _ := strconv.Atoi(CalBetweenDate(startday, startmonth, startyear, endday, endmonth, endyear))
 	return durationDate{
-		DayNameFrom: SetFullNameDate(startday, startmonth, startyear),
-		DayNameTo:   SetFullNameDate(endday, endmonth, endyear),
+		DayNameFrom: SetFullNameDate(startyear, startmonth, startday),
+		DayNameTo:   SetFullNameDate(endyear, endmonth, endday),
 		ResultDay:   CalBetweenDate(startday, startmonth, startyear, endday, endmonth, endyear),
 		Second:      TransferDayToSecond(day),
 		Minute:      TransferDayToMinute(day),
@@ -40,7 +40,7 @@ func MakeJSON(startday int, startmonth int, startyear int, endday int, endmonth 
 	}
 }
 
-func CalBetweenDate(startday int, startmonth int, startyear int, endday int, endmonth int, endyear int) string {
+func CalBetweenDate(startday, startmonth, startyear, endday, endmonth, endyear int) string {
 
 	startdate := time.Date(startyear, time.Month(startmonth), startday, 0, 0, 0, 0, time.UTC)
 	enddate := time.Date(endyear, time.Month(endmonth), endday, 0, 0, 0, 0, time.UTC)
