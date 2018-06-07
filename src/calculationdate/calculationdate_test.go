@@ -54,7 +54,6 @@ func Test_Transfer_Day_To_Minute_Input_152_Should_Be_218880(t *testing.T) {
 		t.Errorf("expectedMinute %s but %s ", expectedMinute, resultMinute)
 
 	}
-
 }
 
 func Test_Transfer_Day_To_Minute_Input_152_Should_Be_13073760(t *testing.T) {
@@ -84,16 +83,11 @@ func Test_Transfer_Day_To_Second_Input_152_Should_Be_13132800(t *testing.T) {
 
 func Test_Transfer_Day_To_Week_Input_152_Should_Be_21_Week_5_Day(t *testing.T) {
 	day := 152
-	resultWeek, resultDay := TransferDayToWeek(day)
-	expectedWeek := "21"
-	expectedDay := "5"
+	resultWeek := TransferDayToWeek(day)
+	expectedWeek := "21", "5"
 
 	if resultWeek != expectedWeek {
 		t.Errorf("expectedWeek %s but %s ", expectedWeek, resultWeek)
-
-	}
-	if resultDay != expectedDay {
-		t.Errorf("expectedDay %s but %s ", expectedDay, resultDay)
 
 	}
 }
@@ -139,10 +133,10 @@ func Test_Tranfer_Day_To_Hours_Input_9079_Should_Be_217896(t *testing.T) {
 }
 
 func Test_Set_Full_Name_Date_From_Input_412018_Should_Be_Thursday_4_January_2018(t *testing.T) {
-	days := 4
-	months := 1
-	years := 2018
-	resultFullname := SetFullNameDate(years, months, days)
+	day := 4
+	month := 1
+	year := 2018
+	resultFullname := SetFullNameDate(year, month, day)
 	expectedFullname := "Thursday 4 January 2018"
 
 	if resultFullname != expectedFullname {
@@ -152,10 +146,10 @@ func Test_Set_Full_Name_Date_From_Input_412018_Should_Be_Thursday_4_January_2018
 }
 
 func Test_Set_Full_Name_Date_To_Input_462018_Should_Be_Monday_4_June_2018(t *testing.T) {
-	days := 4
-	months := 6
-	years := 2018
-	resultFullname := SetFullNameDate(years, months, days)
+	day := 4
+	month := 6
+	year := 2018
+	resultFullname := SetFullNameDate(year, month, day)
 	expectedFullname := "Monday 4 June 2018"
 
 	if resultFullname != expectedFullname {
@@ -165,11 +159,11 @@ func Test_Set_Full_Name_Date_To_Input_462018_Should_Be_Monday_4_June_2018(t *tes
 }
 func Test_Calculate_Percent_Of_Years_Input_152_Should_Be_41_dot_64(t *testing.T) {
 	day := 152
-	resultPercentOfYears := CalculatePercentOfYears(day)
-	expectedPercentOfYears := "41.64"
+	resultPercentOfYear := CalculatePercentOfYears(day)
+	expectedPercentOfYear := "41.64"
 
-	if resultPercentOfYears != expectedPercentOfYears {
-		t.Errorf("expectedPercentOfYears %s but %s ", expectedPercentOfYears, resultPercentOfYears)
+	if resultPercentOfYear != expectedPercentOfYear {
+		t.Errorf("expectedPercentOfYear %s but %s ", expectedPercentOfYear, resultPercentOfYear)
 
 	}
 
@@ -177,11 +171,11 @@ func Test_Calculate_Percent_Of_Years_Input_152_Should_Be_41_dot_64(t *testing.T)
 
 func Test_Calculate_Percent_Of_Years_Input_9079_Should_Be_2487_dot_40(t *testing.T) {
 	day := 9079
-	resultPercentOfYears := CalculatePercentOfYears(day)
-	expectedPercentOfYears := "2487.40"
+	resultPercentOfYear := CalculatePercentOfYears(day)
+	expectedPercentOfYear := "2487.40"
 
-	if resultPercentOfYears != expectedPercentOfYears {
-		t.Errorf("expectedPercentOfYears %s but %s ", expectedPercentOfYears, resultPercentOfYears)
+	if resultPercentOfYear != expectedPercentOfYear {
+		t.Errorf("expectedPercentOfYear %s but %s ", expectedPercentOfYear, resultPercentOfYear)
 
 	}
 

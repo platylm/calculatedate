@@ -12,7 +12,7 @@ const year = 365
 const second = 60
 const week = 7
 
-func CalBetweenDate(startday int, startmonth int, startyear int, endday int, endmonth int, endyear int) string {
+func CalBetweenDate(startday, startmonth, startyear, endday, endmonth, endyear int) string {
 
 	startdate := time.Date(startyear, time.Month(startmonth), startday, 0, 0, 0, 0, time.UTC)
 	enddate := time.Date(endyear, time.Month(endmonth), endday, 0, 0, 0, 0, time.UTC)
@@ -22,15 +22,12 @@ func CalBetweenDate(startday int, startmonth int, startyear int, endday int, end
 	hours := diff.Hours()
 	days := (hours / hour) + 1
 	return strconv.FormatFloat(days, 'f', 0, 64)
-
 }
 
 func TransferDayToMinute(days int) string {
 
 	minutes := days * hour * minute
-
 	return strconv.Itoa(minutes)
-
 }
 
 func TransferDayToSecond(days int) string {
@@ -45,15 +42,15 @@ func TransferDayToWeek(days int) (string, string) {
 	overdays := days % week
 
 	return strconv.Itoa(weeks), strconv.Itoa(overdays)
-
 }
+
 func TransferDayToHours(days int) string {
 
 	hours := days * hour
 	return strconv.Itoa(hours)
 }
 
-func SetFullNameDate(year int, month int, day int) string {
+func SetFullNameDate(year, month, day int) string {
 
 	fullnamedate := time.Date(year, time.Month(month), day, 0, 0, 0, 0, time.UTC)
 
