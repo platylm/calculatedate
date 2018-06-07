@@ -105,3 +105,27 @@ func Test_Tranfer_Day_To_Hours_Input_9079_Should_Be_217896(t *testing.T) {
 	}
 
 }
+
+func Test_Calculate_Percent_Of_Years_Input_152_Should_Be_41_dot_64(t *testing.T) {
+	day := 152
+	resultPercentOfYears := CalculatePercentOfYears(day)
+	expectedPercentOfYears := "41.64"
+
+	if resultPercentOfYears != expectedPercentOfYears {
+		t.Errorf("expectedSecond %s but %s ", expectedPercentOfYears, resultPercentOfYears)
+
+	}
+
+}
+
+func Test_Calculate_Percent_Of_Years_Input_9079_Should_Be_2487_dot_40(t *testing.T) {
+	day := 9079
+	resultPercentOfYears := CalculatePercentOfYears(day)
+	expectedPercentOfYears := "2487.40"
+
+	if resultPercentOfYears != expectedPercentOfYears {
+		t.Errorf("expectedSecond %s but %s ", expectedPercentOfYears, resultPercentOfYears)
+
+	}
+
+}
