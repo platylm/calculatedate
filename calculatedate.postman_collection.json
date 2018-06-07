@@ -95,7 +95,7 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=10/11/1983&enddate=4/6/2018",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -208,7 +208,7 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=27/7/1993&enddate=4/6/2018",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -436,7 +436,7 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=19/9/1987&enddate=4/6/2018",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -549,7 +549,7 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=4/1/2018&enddate=4/6/2018",
+					"raw": "http://localhost:9002/apicalculatedurationdate?startdate=29/8/1990&enddate=4/6/2018",
 					"protocol": "http",
 					"host": [
 						"localhost"
