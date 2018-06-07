@@ -81,3 +81,27 @@ func Test_Tranfer_Day_To_Second_Input_152_Should_Be_13132800(t *testing.T) {
 	}
 
 }
+
+func Test_Tranfer_Day_To_Hours_Input_152_Should_Be_3648(t *testing.T) {
+	day := 152
+	resultHour := TransferDayToHours(day)
+	expectedHour := "3648"
+
+	if resultHour != expectedHour {
+		t.Errorf("expectedSecond %s but %s ", expectedHour, resultHour)
+
+	}
+
+}
+
+func Test_Tranfer_Day_To_Hours_Input_9079_Should_Be_217896(t *testing.T) {
+	day := 9079
+	resultHour := TransferDayToHours(day)
+	expectedHour := "217896"
+
+	if resultHour != expectedHour {
+		t.Errorf("expectedSecond %s but %s ", expectedHour, resultHour)
+
+	}
+
+}
